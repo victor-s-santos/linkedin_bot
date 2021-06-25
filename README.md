@@ -11,6 +11,7 @@
 5. Rode o script python
 
 ---
+0. git clone https://github.com/victor-s-santos/linkedin_bot.git
 1. python -m venv .venv && source .venv/bin/activate
 2. pip install requirements.txt
 3. `Configure .env a partir de .env-sample`

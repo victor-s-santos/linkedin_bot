@@ -38,16 +38,16 @@ def linkedin_bot(perfil_link):
     driver.get(perfil_link)
     driver.find_element_by_xpath('//div[@class="pvs-profile-actions "]//button[@class="pvs-profile-actions__action artdeco-button artdeco-button--2 artdeco-button--primary ember-view"]').click()
     #envia
-    time.sleep(3)
+    time.sleep(delay)
     driver.find_element_by_xpath('//button[@aria-label="Enviar agora"]').click()
 
 
 #linkedin_bot()
-def printa(arquivo):
+def loop(arquivo):
     file = open(arquivo, 'r')
     list_of_lines = file.readlines()
     file.close()
     for line in list_of_lines:
-        print(line)
+        linkedin_bot(line)
 
-printa('links_usuarios.txt')
+loop('links_usuarios.txt')

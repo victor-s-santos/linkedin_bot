@@ -1,0 +1,5 @@
+*.pyc
+.env
+.venv/
+*.log
+links_usuarios.txt

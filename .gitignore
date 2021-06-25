@@ -3,3 +3,4 @@
 .venv/
 *.log
 links_usuarios.txt
+geckodriver
